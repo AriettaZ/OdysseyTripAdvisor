@@ -1,0 +1,40 @@
+.img-thumbnail{
+  margin-bottom: 15px;
+  padding:0px;
+}
+.col-md-11{
+    padding:0px;
+    margin:0px;
+}
+.col-md-12{
+    margin-top: 11px;
+}
+.img-thumbnail .p{
+  margin-bottom: 12px;
+}
+.col-md-4.col-sm-6{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.navbar{
+  margin-bottom: 15px;
+}
+h5{
+  margin-top: 8px;
+}
+.jumbotron{
+  margin-bottom: 20px;
+}
+
+.inline{
+  display: inline;
+}
+.float-right{
+  margin-top: 4px;
+}
+.col-md-12 p{
+  margin-bottom: 0px;
+}
+.card-text p{
+  margin-bottom: 0px;
+}

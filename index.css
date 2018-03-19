@@ -1,0 +1,12 @@
+.col-md-4 {
+    margin-left:15px;
+    margin-bottom: 15px;
+    width:31.6%; /* non-css3 fallback */
+    width: calc( 33.33333333% - 15px ); /* css3 calculation */
+}
+.col-sm-6 {
+    margin-left:5px;
+    margin-bottom: 5px;
+    width: 31.6%; /* non-css3 fallback */
+    width: calc( 33.33333333% - 15px ); /* css3 calculation */
+}

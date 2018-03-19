@@ -1,0 +1,76 @@
+body {
+  background-color: #000;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+#landing-header h1 {
+  color: #fff;
+}
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+.slideshow li:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1507475380673-1246fa72eeea?ixlib=rb-0.3.5&s=2f5e648d1273301d7c4b7212404c01a4&auto=format&fit=crop&w=1350&q=80)
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1463411046511-e12f4010ff82?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2d49dec84fffab49f0cc3ff36ccf0294&auto=format&fit=crop&w=800&q=60);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1503152394-c571994fd383?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b26f407b8783a20a29b747f2406cc648&auto=format&fit=crop&w=1500&q=80);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1518822470665-32a3956d2ba9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5568d281bdbd34c541dd0962c5dcf09e&auto=format&fit=crop&w=1506&q=80);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://images.unsplash.com/photo-1470497409162-889ff0ac5726?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7189729d4c4c06b8cb543891ac53078a&auto=format&fit=crop&w=1500&q=80);
+  animation-delay: 40s;
+}
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
