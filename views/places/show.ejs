@@ -45,8 +45,8 @@
                 <div class="col-md-12">
                   <%=comment.author.username%>
                   <span class="float-right">twenty-three centuries ago</span>
-                  <br />
-                  <p>
+
+                  <p><br />
                     <%=comment.text%>
                   </p>
                   <%  if (currentUser && comment.author.id.equals(currentUser._id)){ %>
