@@ -49,6 +49,7 @@
                   <p><br />
                     <%=comment.text%>
                     <br />
+                    <br />
                   </p>
                   <%  if (currentUser && comment.author.id.equals(currentUser._id)){ %>
                   <a class="btn btn-warning btn-sm" href="/places/<%=place._id%>/comments/<%=comment._id%>/edit">Edit</a>
